@@ -4,6 +4,7 @@ sendBufferAsm:
     
     mov r4, r0 ; save buff
     mov r6, r1 ; save pin
+    mov r7,r2 ; get the brightness figure
     
     mov r0, r4
     bl BufferMethods::length
@@ -46,12 +47,15 @@ sendBufferAsm:
     bcc .stop           ; if (r5<0) goto .stop  C11
 .start:
     movs r6, #0x80      ; reset mask C12
-    nop                 ;            C13
-
+    ldrb r0, [r4, #0]   ; r0 := *r4   
+    muls r0,r7          ; hope we have single cycle multiplier...
+    lsrs r0, r0, #8     ; r0 >>= 8 following multiplicatio
+    
 .common:               ;             C13
     str r1, [r2, #0]   ; pin := lo   C15
-    ; always re-load byte - it just fits with the cycles better this way
-    ldrb r0, [r4, #0]  ; r0 := *r4   C17
+    nop                 ; twiddle 
+    nop                 ;twaddle
+    
     b .nextbit         ;             C20
 
 .justbit: ; C10
