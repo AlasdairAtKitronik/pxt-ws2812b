@@ -1,12 +1,15 @@
-# ws2812 [![Build Status](https://travis-ci.org/Microsoft/pxt-ws2812b.svg?branch=master)](https://travis-ci.org/Microsoft/pxt-ws2812b)
+# BETA MODIFICATIONS DO NOT USE WITHOUT A HARD HAT
+# ws2812
 
-A driver for WS2812B programmable LEDs in MakeCode.
+A driver for WS2812B programmable LEDs in MakeCode which respects the brightness in all scenarios.
 
 ## Usage
 
 The package exposes ``ws2812b.sendBuffer`` that bit-bangs a color buffer for WS2812B LEDs over a pin.
 
-See https://github.com/Microsoft/pxt-neopixel for an example of usage.
+See 
+# Kitronik thingy  
+for an example of usage.
 
 ## ~ hint
  
@@ -25,11 +28,9 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
-* for PXT/calliope
 
 (The metadata above is needed for package search.)
 
+# Forked from 
+https://github.com/microsoft/pxt-ws2812b
 
-## Code of Conduct
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
