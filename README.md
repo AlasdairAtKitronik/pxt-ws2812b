@@ -1,5 +1,4 @@
-# BETA MODIFICATIONS DO NOT USE WITHOUT A HARD HAT
-# ws2812
+# Kitronik fork of the WS2812B package for microbit
 
 A driver for WS2812B programmable LEDs in MakeCode which respects the brightness in all scenarios.
 
@@ -8,7 +7,8 @@ A driver for WS2812B programmable LEDs in MakeCode which respects the brightness
 The package exposes ``ws2812b.sendBuffer`` that bit-bangs a color buffer for WS2812B LEDs over a pin.
 
 See 
-# Kitronik thingy  
+# Kitronik HaloHD 
+https://github.com/KitronikLtd/pxt-kitronik-halohd
 for an example of usage.
 
 ## ~ hint
