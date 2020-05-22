@@ -1,5 +1,5 @@
 namespace ws2812b {
-    //% shim=sendBufferAsm
+    //% shim=sendZIPLEDBufferAsm
     export function sendBuffer(buf: Buffer, pin: DigitalPin, Brightness: number) {
     }
 }
